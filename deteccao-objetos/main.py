@@ -85,7 +85,7 @@ def main():
     """
     print("Inicializando o detector de objetos...")
     modelo = carregar_modelo_pretreinado()
-    captura_video = cv2.VideoCapture(1) # 0 para webcam padrão
+    captura_video = cv2.VideoCapture(0) # 0 para webcam padrão
 
     if not captura_video.isOpened():
         raise Exception("Não foi possível abrir a webcam.")
